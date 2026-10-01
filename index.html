@@ -3,22 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>2026 고양특례시 소상공인 상생한마당</title>
-<meta name="description" content="10월 24일(토)~25일(일) 09:00~20:00 · 일산문화광장 · 소상공인이 웃어야 대한민국이 웃는다!">
+<title>상생한마당 부스 참가업체 모집</title>
+<meta name="description" content="10월 10일(토)까지 접수 · 100팀 모집 · 10월 24~25일 일산문화광장 · 내 가게를 알릴 가장 좋은 이틀!">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="고양특례시소상공인연합회">
-<meta property="og:title" content="2026 고양특례시 소상공인 상생한마당 초대합니다">
-<meta property="og:description" content="10월 24일(토)~25일(일) 09:00~20:00 · 일산문화광장 · 소상공인이 웃어야 대한민국이 웃는다!">
-<meta property="og:image" content="https://sangsaeng-2026-invitation.pages.dev/og.jpg">
+<meta property="og:title" content="2026 상생한마당 부스 참가업체 모집 · 100팀">
+<meta property="og:description" content="10월 10일(토)까지 접수 · 100팀 모집 · 10월 24~25일 일산문화광장 · 내 가게를 알릴 가장 좋은 이틀!">
+<meta property="og:image" content="og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="628">
-<meta property="og:url" content="https://sangsaeng-2026-invitation.pages.dev/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo.png">
 <style>:root{color-scheme:light dark;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@400;500;700&display=swap">
 <style>
-/* Layout: 모바일 세로 스크롤 초대장. 포스터 표지 → 일시·모시는 글 → 달력·D-day → 프로그램 → 오시는 길 → 참석 신청 → 공유. 좌상단 고정 ⋯ 버튼이 공유 창을 연다. */
+/* Layout: 모바일 세로 스크롤 부스 참가업체 모집 안내. 포스터 표지 → 모집 개요 → 참여해야 할 이유 → 마감 카운트다운 → 부스·참가비 → 선발 일정 → 신청 전 확인 → 오시는 길 → 참가 신청 → 공유. 좌상단 고정 ⋯ 버튼이 공유 창을 연다. */
 :root {
   --bg: #f2f5fb;
   --surface: #ffffff;
@@ -199,7 +198,7 @@ section { padding: 44px 20px; }
 /* 참석 */
 .rsvp { position: relative; overflow: hidden; text-align: center; color: #fff; background: linear-gradient(145deg, #1e3f8f 0%, #3b3a9e 58%, #5b2a91 100%); border-radius: 26px; margin-inline: 16px; padding: 40px 20px 30px; box-shadow: 0 14px 32px rgba(46, 48, 130, .28); }
 .rsvp::before { content: ""; position: absolute; width: 240px; height: 240px; right: -80px; top: -110px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 255, 255, .2), rgba(255, 255, 255, 0) 70%); pointer-events: none; }
-.rsvp::after { content: "RSVP"; display: block; position: absolute; top: 16px; left: 0; right: 0; font-size: 11px; font-weight: 800; letter-spacing: .4em; padding-left: .4em; color: var(--yellow); }
+.rsvp::after { content: "APPLY"; display: block; position: absolute; top: 16px; left: 0; right: 0; font-size: 11px; font-weight: 800; letter-spacing: .4em; padding-left: .4em; color: var(--yellow); }
 .rsvp h2 { position: relative; font-family: var(--font-display); font-weight: 400; font-size: 26px; }
 .rsvp p { margin-top: 8px; font-size: 15px; opacity: .92; word-break: keep-all; }
 .rsvp .contacts { display: flex; justify-content: center; align-items: stretch; margin-top: 22px; padding-top: 20px; border-top: 1px dashed rgba(255, 255, 255, .28); color: var(--yellow); }
@@ -210,6 +209,51 @@ section { padding: 44px 20px; }
 .rsvp .tel { display: inline-block; margin-top: 18px; padding: 9px 22px; border-radius: 999px; background: rgba(255, 255, 255, .13); border: 1px solid rgba(255, 255, 255, .28); opacity: 1; }
 .tel { margin-top: 14px; font-size: 15px; font-variant-numeric: tabular-nums; }
 .tel b { font-size: 19px; user-select: all; }
+
+/* 참여 이유 · 부스 · 안내 */
+.why-lead { text-align: center; color: var(--muted); font-size: 14.5px; margin-top: 10px; word-break: keep-all; }
+.prog.why b { font-size: 16.5px; }
+.prog.why small { font-size: 14px; line-height: 1.6; word-break: keep-all; }
+.deadline { text-align: center; }
+.booths { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+.booth { position: relative; overflow: hidden; text-align: center; background: var(--surface); border-radius: 18px; padding: 22px 12px 18px; box-shadow: var(--shadow); }
+.booth::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 5px; background: var(--c); }
+.booth .size { display: inline-block; font-size: 14px; font-weight: 800; color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent); border-radius: 999px; padding: 2px 14px; }
+.booth .price { display: block; margin-top: 10px; font-family: var(--font-display); font-weight: 400; font-size: 32px; line-height: 1.25; font-variant-numeric: tabular-nums; color: var(--ink); }
+.booth .price small { font-family: var(--font-body); font-size: 15px; font-weight: 700; margin-left: 2px; }
+.booth p { margin-top: 8px; font-size: 13px; color: var(--muted); line-height: 1.55; word-break: keep-all; }
+.booth-note { text-align: center; font-size: 13.5px; color: var(--muted); margin-top: 12px; word-break: keep-all; }
+.kinds { margin-top: 26px; }
+.kinds .fact:nth-child(1) { --c: var(--orange); }
+.kinds .fact:nth-child(2) { --c: var(--pink); }
+.kinds .fact dd b { font-size: 16px; }
+.checks { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 10px; }
+.checks li { position: relative; background: var(--surface); border-radius: 16px; padding: 14px 16px 14px 48px; box-shadow: var(--shadow); font-size: 14.5px; line-height: 1.6; word-break: keep-all; }
+.checks li::before { content: "✓"; position: absolute; left: 14px; top: 14px; width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; font-size: 14px; font-weight: 800; color: #fff; background: var(--green); }
+.checks b { display: block; font-size: 15px; }
+.checks em { font-style: normal; font-weight: 700; color: var(--red); }
+.how { display: grid; gap: 10px; margin-top: 22px; position: relative; }
+.how a { display: block; text-decoration: none; padding: 11px 16px; border-radius: 14px; background: rgba(255, 255, 255, .13); border: 1px solid rgba(255, 255, 255, .28); font-size: 14px; color: rgba(255, 255, 255, .85); }
+.how a b { display: block; font-size: 17px; color: var(--yellow); font-variant-numeric: tabular-nums; }
+.rsvp .contacts { flex-wrap: wrap; row-gap: 14px; }
+.rsvp .contacts span { flex: 1 1 30%; }
+.rsvp .contacts b { font-size: 16px; }
+.rsvp .contacts a { text-decoration: none; }
+.rsvp .contacts a b { display: block; }
+.cta { text-align: center; margin-top: 26px; }
+.cta small { display: block; font-size: 13px; font-weight: 700; color: var(--pink); letter-spacing: .02em; }
+.var { font-size: 12px; font-weight: 400; opacity: .8; }
+.cta .btn { margin-top: 8px; color: #14204a; box-shadow: 0 10px 22px rgba(240, 138, 28, .32); }
+.chan { list-style: none; padding: 0; margin: 24px 0 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.chan li { position: relative; overflow: hidden; background: var(--surface); border-radius: 16px; padding: 14px 14px 14px 18px; box-shadow: var(--shadow); }
+.chan li::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--c); }
+.chan em { display: block; font-style: normal; font-size: 12px; font-weight: 800; letter-spacing: .08em; color: var(--c); }
+.chan b { display: block; margin-top: 2px; font-size: 15px; line-height: 1.4; word-break: keep-all; }
+.chan small { display: block; margin-top: 4px; font-size: 12.5px; color: var(--muted); line-height: 1.5; word-break: keep-all; }
+.rv .chan li { transition: opacity .7s cubic-bezier(.22, .8, .24, 1), transform .7s cubic-bezier(.22, .8, .24, 1); transition-delay: calc(var(--i, 0) * .1s + .1s); }
+.rv.pre .chan li { opacity: 0; transform: translateY(20px); }
+@media (prefers-reduced-motion: reduce) { .rv .chan li { transition: none; } .rv.pre .chan li { opacity: 1; transform: none; } }
+.btn.off { background: rgba(255, 255, 255, .22); color: #fff; cursor: default; }
 
 /* 주최 */
 .host { text-align: center; padding-bottom: 30px; }
@@ -265,28 +309,56 @@ section { padding: 44px 20px; }
   </header>
 
   <section class="intro rv">
-    <p class="eyebrow">소상공인의 날 기념식 및 개막식</p>
-    <h1 class="name">2026년 고양특례시 소상공인 <b>상생한마당</b></h1>
+    <p class="eyebrow">상생한마당 부스 참가업체 모집</p>
+    <h1 class="name">내 가게를 알릴<br>가장 좋은 이틀, <b>상생한마당</b></h1>
     <p class="slogan">소상공인이 웃어야 대한민국이 웃는다!</p>
     <dl class="facts">
-      <div class="fact" style="--i:0"><dt>일 시</dt><dd class="date-hi"><em>2026. 10. 24.(토) ~ 10. 25.(일)</em><small>매일 09:00 ~ 20:00</small></dd></div>
-      <div class="fact" style="--i:1"><dt>장 소</dt><dd><b>일산문화광장</b><small>개막식 10월 24일(토) 오후 2시</small></dd></div>
-      <div class="fact" style="--i:2"><dt>내 용</dt><dd class="lines"><span style="--d:var(--orange)">기념식과 개막식</span><span style="--d:var(--green)">우수상품 체험부스</span><span style="--d:var(--navy)">축하공연과 가요제</span><span style="--d:var(--pink)">가치소비 경품행사</span></dd></div>
+      <div class="fact" style="--i:0"><dt>접 수</dt><dd class="date-hi"><em>2026. 9. 22.(화) ~ 10. 10.(토)</em><small>모집 100팀 · 선정 결과는 개별 문자 통보</small></dd></div>
+      <div class="fact" style="--i:1"><dt>행 사</dt><dd class="date-hi"><em>2026. 10. 24.(토) ~ 10. 25.(일)</em><small>2026 고양특례시 소상공인의 날 기념행사</small></dd></div>
+      <div class="fact" style="--i:2"><dt>장 소</dt><dd><b>일산문화광장</b><small>고양시 일산동구 중앙로 1271-4</small></dd></div>
     </dl>
   </section>
 
-  <section class="letter rv" aria-label="모시는 글">
-    <img class="letter-img" src="invitation.jpg" width="1122" height="1402" loading="lazy" alt="모시는 글. 소상공인의 소중한 가치와 노고를 함께 되새기고, 지역 소상공인과 시민이 함께 소통하며 상생의 의미를 나누는 「소상공인의 날 기념식 및 상생한마당」에 여러분을 초대합니다. 지역경제의 든든한 버팀목인 소상공인 여러분께 감사의 마음을 전하고, 함께 웃고 즐기며 새로운 상생의 장을 만들어가는 뜻깊은 자리에 많은 관심과 참여 부탁드립니다. 법정경제단체 고양특례시소상공인연합회 회장 김용락">
+  <section class="rv" aria-labelledby="whyH">
+    <p class="eyebrow">Why join</p>
+    <h2 class="h2" id="whyH">이 부스에 꼭 참여해야 하는 이유</h2>
+    <p class="why-lead">판로가 필요한 소상공인에게<br>연합회가 마련한 상생의 기회입니다.</p>
+    <ul class="prog why">
+      <li style="--c:var(--orange);--i:0"><i></i><div><b>주말 이틀, 예상 방문객 5만 명 이상</b><small>고양시 소상공인 100팀이 한자리에 모이는 소상공인의 날 기념행사. 많은 시민 앞에서 내 상품을 직접 선보이고 판매할 수 있습니다.</small></div></li>
+      <li style="--c:var(--pink);--i:1"><i></i><div><b>행사 전부터 고양시 곳곳에서 홍보</b><small>시내버스 모니터, 도로 전광판, 거리 현수막·전단지까지. 더 많은 시민이 행사장을 찾도록 알립니다.</small></div></li>
+      <li style="--c:var(--green);--i:2"><i></i><div><b>공연과 경품행사로 모이는 시민들</b><small>가수 김소연·황민호 축하공연, 소상공인 가요제, 가치소비 경품행사까지. 즐기러 온 시민이 내 부스 앞을 지나갑니다.</small></div></li>
+      <li style="--c:var(--navy);--i:3"><i></i><div><b>부스 준비 걱정 없이, 3×3 부스 6만 원부터</b><small>텐트, 상호현수막, 테이블, 의자를 기본으로 제공합니다. 상품만 가져오세요.</small></div></li>
+      <li style="--c:var(--purple);--i:4"><i></i><div><b>고양시와 지역 정치권이 함께하는 행사</b><small>고양특례시장, 국회의원, 경기도의원, 고양시의원이 참석할 예정입니다.</small></div></li>
+      <li style="--c:var(--orange);--i:5"><i></i><div><b>상생·협력·정보의 기회</b><small>지역 소상공인과 만나 협력하고 정보를 나누며, 지역소상공인의 권익과 고양특례시의 경제성장에 함께합니다.</small></div></li>
+    </ul>
+    <div class="stats">
+      <div style="--i:6"><b data-to="5" data-suffix="만+">5만+</b><span>예상 방문객 (주말 이틀)</span></div>
+      <div style="--i:7"><b data-to="100">100</b><span>모집 업체(팀)</span></div>
+      <div style="--i:8"><b data-to="2" data-suffix="일">2일</b><span>부스 운영 기간</span></div>
+      <div style="--i:9"><b data-to="400" data-suffix="″">400″</b><span>무대 LED 전광판</span></div>
+    </div>
+    <div class="cta apply-slot"><small>접수 마감 10월 10일(토)<br><span class="var">※ 사정에 따라 변동될 수 있습니다</span></small></div>
   </section>
 
-  <section class="rv" aria-labelledby="calH">
-    <p class="eyebrow">Save the date</p>
-    <h2 class="h2" id="calH">2026년 10월</h2>
-    <div class="cal">
-      <div class="cal-grid" id="calGrid" role="grid" aria-label="2026년 10월 달력"></div>
-      <p class="cal-note">보라색 표시가 상생한마당 이틀입니다</p>
-    </div>
-    <p class="count-title" id="countTitle">개막식까지 남은 시간</p>
+  <section class="rv" aria-labelledby="promoH">
+    <p class="eyebrow">Promotion</p>
+    <h2 class="h2" id="promoH">행사 전·중·후, 계속 알립니다</h2>
+    <p class="why-lead">공공 매체부터 언론까지<br>여섯 개 채널로 행사를 홍보합니다.</p>
+    <ul class="chan">
+      <li style="--c:var(--orange);--i:0"><em>행사 전</em><b>시내버스 모니터</b><small>고양시 지원 · 차내 홍보영상</small></li>
+      <li style="--c:var(--orange);--i:1"><em>행사 전</em><b>도로형 전광판 4개소</b><small>고양시 지원 · IC 등 도로 전광판</small></li>
+      <li style="--c:var(--orange);--i:2"><em>행사 전</em><b>거리 현수막 · 전단지</b><small>관내 주요 거리 게시 및 배포</small></li>
+      <li style="--c:var(--green);--i:3"><em>행사 중</em><b>무대 400인치 LED</b><small>이틀간 대형 화면 상시 송출</small></li>
+      <li style="--c:var(--green);--i:4"><em>행사 중</em><b>현장 사인물 · 무대 멘트</b><small>현장에서 행사와 참여 업체 안내</small></li>
+      <li style="--c:var(--navy);--i:5"><em>행사 후</em><b>언론 결과 보도</b><small>고양신문 등 행사 결과 보도</small></li>
+    </ul>
+    <p class="hint">홍보 계획은 상황에 따라 변경될 수 있습니다.</p>
+  </section>
+
+  <section class="deadline rv" aria-label="접수 마감까지 남은 시간">
+    <p class="eyebrow">Deadline</p>
+    <h2 class="h2">접수는 10월 10일(토)까지</h2>
+    <p class="count-title" id="countTitle">접수 마감까지 남은 시간</p>
     <div class="count" id="count" role="timer" aria-live="off">
       <div><b id="cd">0</b><span>DAYS</span></div>
       <div><b id="ch">0</b><span>HOURS</span></div>
@@ -296,31 +368,54 @@ section { padding: 44px 20px; }
     <p class="count-msg" id="countMsg" hidden></p>
   </section>
 
-  <section class="rv" aria-labelledby="progH">
-    <p class="eyebrow">Program</p>
-    <h2 class="h2" id="progH">행사 안내</h2>
+  <section class="rv" aria-labelledby="boothH">
+    <p class="eyebrow">Booth</p>
+    <h2 class="h2" id="boothH">모집 분야와 부스 안내</h2>
+    <dl class="facts kinds">
+      <div class="fact" style="--i:0"><dt>판 매</dt><dd><b>직접 판매 중인 제품</b><small>먹거리, 핸드메이드 물품, 애견용품, 친환경 제품 등</small></dd></div>
+      <div class="fact" style="--i:1"><dt>체 험</dt><dd><b>공예품, 소품 만들기, 페이스페인팅 등</b><small>방문객이 직접 참여하는 체험 부스</small></dd></div>
+    </dl>
+    <p class="booth-note">품목의 다양성 확보를 위해 동일·유사 품목은 선정이 제한될 수 있습니다.</p>
+    <div class="booths">
+      <div class="booth" style="--c:var(--green)"><span class="size">3×3 텐트</span><b class="price">60,000<small>원</small></b><p>텐트 · 상호현수막<br>테이블 1개 · 의자 2개</p></div>
+      <div class="booth" style="--c:var(--purple)"><span class="size">3×6 텐트</span><b class="price">100,000<small>원</small></b><p>텐트 · 상호현수막<br>테이블 2개 · 의자 4개</p></div>
+    </div>
+    <p class="booth-note">테이블과 의자는 추가할 수 있습니다. (추가분은 개인 부담)</p>
+    <div class="cta apply-slot"><small>접수 마감 10월 10일(토)<br><span class="var">※ 사정에 따라 변동될 수 있습니다</span></small></div>
+  </section>
+
+  <section class="rv" aria-labelledby="flowH">
+    <p class="eyebrow">Schedule</p>
+    <h2 class="h2" id="flowH">선발 일정</h2>
     <ul class="prog">
-      <li style="--c:var(--orange);--i:0"><i></i><div><b>소상공인의 날 기념식 및 개막식</b><small>10월 24일(토) 오후 2시, 일산문화광장</small></div></li>
-      <li style="--c:var(--green);--i:1"><i></i><div><b>소상공인 우수상품 홍보 및 체험부스 운영</b><small>이틀간 09:00 ~ 20:00</small></div></li>
-      <li style="--c:var(--navy);--i:2"><i></i><div><b>축하공연 및 소상공인 가요제</b><small>무대 LED 전광판 운영</small></div></li>
-      <li style="--c:var(--pink);--i:3"><i></i><div><b>가치소비 경품행사 및 시상식</b><small>이틀간 현장 진행</small></div></li>
+      <li style="--c:var(--orange);--i:0"><i></i><div><b>사업 공고 및 신청·접수</b><small>9월 22일(화) ~ 10월 10일(토)</small></div></li>
+      <li style="--c:var(--green);--i:1"><i></i><div><b>선정 통보</b><small>10월 12일(월) · 선정자 개별 문자 통보</small></div></li>
+      <li style="--c:var(--navy);--i:2"><i></i><div><b>업체 사전 면담</b><small>10월 15일(목) 예정</small></div></li>
+      <li style="--c:var(--pink);--i:3"><i></i><div><b>행사 진행</b><small>10월 24일(토) ~ 25일(일)</small></div></li>
     </ul>
-    <div class="stage">
-      <span class="lbl">축하 무대 출연</span>
-      <span class="chip" style="--i:4">가수 김소연</span>
-      <span class="chip" style="--i:5">가수 황민호</span>
-    </div>
-    <div class="stats">
-      <div style="--i:6"><b data-to="100">100</b><span>참여 소상공인 업체</span></div>
-      <div style="--i:7"><b data-to="400" data-suffix="″">400″</b><span>무대 LED 전광판</span></div>
-    </div>
+    <p class="hint">추후 일정이 변경될 수 있습니다.</p>
+  </section>
+
+  <section class="rv" aria-labelledby="chkH">
+    <p class="eyebrow">Check</p>
+    <h2 class="h2" id="chkH">신청 전 꼭 확인하세요</h2>
+    <ul class="checks">
+      <li><b>선정 기준</b>고양시 소상공인이면 신청할 수 있습니다. (사업자등록증이 없어도 가능) 연합회 행사에 적극 참여했던 소상공인을 우선 선정하며, 선정은 절차에 따라 연합회에서 진행합니다.</li>
+      <li><b>신청 방법</b>구글 폼을 작성하면 참가신청서와 개인정보처리동의서가 함께 접수됩니다. 이메일·문자로도 접수할 수 있습니다.</li>
+      <li><b>미리 준비하세요</b>성명(업체명)·생년월일·주소·연락처, 상품명·예상 판매가·주요 특징, 부스 크기와 참여 인원, 카드단말기·전기 사용 여부(필요 용량)를 적게 됩니다. 개인정보는 행사 안내와 통계·사업 관리에만 쓰이며 사업 종료 시까지 보관합니다. 동의하지 않으면 접수가 제한됩니다.</li>
+      <li><b>직접 운영</b>부스는 신청자 본인이 직접 운영해야 하며 제3자에게 임대할 수 없습니다. 특별한 사유가 있으면 주최 측과 사전 협의 후 대체 인력으로 운영할 수 있습니다.</li>
+      <li><b>부스 운영</b>운영시간을 지켜야 하며, 지키지 않으면 추후 연합회 행사 참여가 제한될 수 있습니다. 행사 시작 30분 전까지 준비를 마쳐야 하고, 부스 위치는 주최 측 심의 후 추후 통보합니다.</li>
+      <li><b>전기·카드 결제</b>전기는 기본 500W가 제공됩니다. 더 필요하면 신청서에 필요 용량과 사용처를 적어 주세요. 행사 때 카드단말기가 필요하면 사무국장 어진만 010-5423-1680으로 문의해 주세요.</li>
+      <li><b>판매 품목</b>신청서에 기재한 품목 외에는 판매할 수 없으며, 품목이나 판매가를 바꿀 때는 주최 측과 사전 협의해야 합니다.</li>
+      <li><b>자리 정돈</b>행사 후 자리 정돈은 필수입니다. <em>내 쓰레기는 내가 치웁니다.</em></li>
+    </ul>
   </section>
 
   <section class="rv" aria-labelledby="mapH">
     <p class="eyebrow">Location</p>
-    <h2 class="h2" id="mapH">오시는 길</h2>
+    <h2 class="h2" id="mapH">행사장 안내</h2>
     <p class="place"><b>일산문화광장</b><span>경기도 고양시 일산동구 중앙로 1271-4</span><span>정발산역 3번 출구에서 도보 약 5분</span></p>
-    <a class="mapimg" href="https://map.naver.com/p/search/%EC%9D%BC%EC%82%B0%EB%AC%B8%ED%99%94%EA%B4%91%EC%9E%A5" target="_blank" rel="noopener"><img src="map-route.jpg" alt="찾아오시는 길 약도. 일산호수공원 옆 일산문화광장, 정발산역에서 도보 약 5분. 주소 경기도 고양시 일산동구 중앙로 1271-4" width="1774" height="887" loading="lazy"></a>
+    <a class="mapimg" href="https://map.naver.com/p/search/%EC%9D%BC%EC%82%B0%EB%AC%B8%ED%99%94%EA%B4%91%EC%9E%A5" target="_blank" rel="noopener"><img src="map-route.jpg" alt="행사장 약도. 일산호수공원 옆 일산문화광장, 정발산역에서 도보 약 5분. 주소 경기도 고양시 일산동구 중앙로 1271-4" width="1774" height="887" loading="lazy"></a>
     <nav class="maps" aria-label="길찾기">
       <a class="nv" href="https://map.naver.com/p/search/%EC%9D%BC%EC%82%B0%EB%AC%B8%ED%99%94%EA%B4%91%EC%9E%A5" target="_blank" rel="noopener"><span class="ic" aria-hidden="true">N</span>네이버지도</a>
       <a class="kk" href="https://map.kakao.com/?q=%EC%9D%BC%EC%82%B0%EB%AC%B8%ED%99%94%EA%B4%91%EC%9E%A5" target="_blank" rel="noopener"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.8 1.8 5.3 4.6 6.7l-1 3.6c-.1.3.2.5.5.4l4.2-2.8c.5.1 1.1.1 1.7.1 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg></span>카카오맵</a>
@@ -330,29 +425,19 @@ section { padding: 44px 20px; }
   </section>
 
   <section class="rsvp rv" aria-labelledby="rsvpH">
-    <h2 id="rsvpH">참석 여부를 알려주세요</h2>
-    <p>행사 준비에 큰 도움이 됩니다.<br>함께해 주시는 분들의 참석 여부를 알려주세요.</p>
+    <h2 id="rsvpH">지금 부스 참가를 신청하세요</h2>
+    <p>접수 마감 10월 10일(토)<br><span class="var">※ 사정에 따라 변동될 수 있습니다</span><br>내 가게를 알릴 기회, 놓치지 마세요.</p>
     <div id="rsvpAction"></div>
+    <div class="how">
+      <a href="mailto:kfme2025@naver.com">이메일 접수<b>kfme2025@naver.com</b></a>
+      <a href="sms:01075549179">문자 접수 · 황상희 행정실장<b>010-7554-9179</b></a>
+    </div>
     <p class="tel">문의 <b>031-906-6660</b></p>
     <div class="contacts">
-      <span>수석부회장 <b>김경희</b></span>
-      <span>TF 담당 부회장 <b>이한홍</b></span>
+      <span>상임이사 안영길<b><a href="tel:01029301137">010-2930-1137</a></b></span>
+      <span>홍보이사 윤진수<b><a href="tel:01027301414">010-2730-1414</a></b></span>
+      <span>행정실장 황상희<b><a href="tel:01075549179">010-7554-9179</a></b></span>
     </div>
-  </section>
-
-  <section class="rv" aria-labelledby="spH">
-    <p class="eyebrow">Sponsors</p>
-    <h2 class="h2" id="spH">함께해 주시는 후원사</h2>
-    <p class="sp-lead">소상공인의 상생을 응원해 주신<br>든든한 후원 기관에 깊이 감사드립니다.</p>
-    <ul class="sponsors">
-      <li><span>한국마사회</span>일산지사</li>
-      <li><span>롯데칠성음료</span>고양지점</li>
-      <li><span>삼성전자</span>일산지점</li>
-      <li><span>농협</span>고양유통센터</li>
-      <li><span>고양축산농협</span></li>
-      <li><span>송포농업협동조합</span></li>
-      <li><span>하나은행</span></li>
-    </ul>
   </section>
 
   <section class="host rv">
@@ -375,7 +460,7 @@ section { padding: 44px 20px; }
   <div class="card">
     <button class="x" id="sheetX" type="button" aria-label="닫기">×</button>
     <h3 id="sheetT">공유하기</h3>
-    <div class="qr" id="qr" aria-label="초대장 링크 QR 코드"></div>
+    <div class="qr" id="qr" aria-label="부스 모집 안내 링크 QR 코드"></div>
     <p class="url" id="urlText"></p>
     <button class="btn" id="nativeShare" type="button" hidden>카카오톡·문자 등으로 공유</button>
     <button class="btn green" id="copyBtn2" type="button">링크 복사</button>
@@ -386,30 +471,17 @@ section { padding: 44px 20px; }
 
 <script>
 (function () {
-  var PAGE_URL = "https://sangsaeng-2026-invitation.pages.dev/";      // 게시 후 채움. 비어 있으면 현재 주소 사용
-  var RSVP_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfylNFGC97ONXM2a4dMCrPrWQzaxSazHQTNv9gsH337lStl9Q/viewform";      // 참석 신청 폼 주소. 비어 있으면 전화 안내만 표시
+  var PAGE_URL = "";      // 게시 후 채움. 비어 있으면 현재 주소 사용
+  var RSVP_URL = "https://script.google.com/macros/s/AKfycbyBfI7K7UaBOdf_aX4bt5Y9JnUUYNUhU2ll9hH1CkWMSW5ZTei4K1-Lg7UCwdx8TZWdFQ/exec?v=2";      // 부스 참가 신청 폼 주소. 비어 있으면 전화 안내만 표시
   var url = PAGE_URL && PAGE_URL.indexOf("@@") < 0 ? PAGE_URL : location.href;
   var rsvp = RSVP_URL && RSVP_URL.indexOf("@@") < 0 ? RSVP_URL : "";
   var $ = function (id) { return document.getElementById(id); };
 
-  /* 달력: 2026년 10월 (1일은 목요일) */
-  var g = $("calGrid"), html = "";
-  ["일","월","화","수","목","금","토"].forEach(function (d) { html += '<div class="dow">' + d + "</div>"; });
-  var first = new Date(2026, 9, 1).getDay();
-  for (var i = 0; i < first; i++) html += "<div></div>";
-  for (var d = 1; d <= 31; d++) {
-    var dow = (first + d - 1) % 7, on = d === 24 || d === 25;
-    html += '<div class="d' + (dow === 0 ? " sun" : "") + (dow === 6 ? " sat" : "") + (on ? " on" : "") + '">' + (on ? "<span>" + d + "</span>" : d) + "</div>";
-  }
-  g.innerHTML = html;
-
-  /* D-day: 개막식 2026-10-24 14:00 (한국 시간) */
-  var open = new Date("2026-10-24T14:00:00+09:00").getTime();
-  var start = new Date("2026-10-24T09:00:00+09:00").getTime();
-  var end = new Date("2026-10-25T20:00:00+09:00").getTime();
+  /* D-day: 접수 마감 2026-10-10 23:59:59 (한국 시간) */
+  var end = new Date("2026-10-10T23:59:59+09:00").getTime();
   function pad(n) { return n < 10 ? "0" + n : String(n); }
   function tick() {
-    var now = Date.now(), diff = open - now;
+    var now = Date.now(), diff = end - now;
     var box = $("count"), msg = $("countMsg"), tt = $("countTitle");
     if (diff > 0) {
       var s = Math.floor(diff / 1000);
@@ -420,18 +492,23 @@ section { padding: 44px 20px; }
       msg.hidden = true; box.hidden = false; tt.hidden = false;
     } else {
       box.hidden = true; tt.hidden = true; msg.hidden = false;
-      msg.textContent = now <= end ? (now >= start ? "지금 일산문화광장에서 행사가 진행 중입니다" : "곧 개막합니다") : "2026 상생한마당에 함께해 주셔서 감사합니다";
+      msg.textContent = "부스 참가 접수가 마감되었습니다";
     }
   }
   tick(); setInterval(tick, 1000);
 
-  /* 참석 신청 */
+  /* 참가 신청 */
   var act = $("rsvpAction");
   if (rsvp) {
     act.innerHTML = '<a class="btn" target="_blank" rel="noopener"></a>';
-    act.firstChild.href = rsvp; act.firstChild.textContent = "참석 신청하기";
+    act.firstChild.href = rsvp; act.firstChild.textContent = "부스 참가 신청하기";
+    document.querySelectorAll(".apply-slot").forEach(function (el) {
+      var b = document.createElement("a");
+      b.className = "btn"; b.target = "_blank"; b.rel = "noopener"; b.href = rsvp; b.textContent = "부스 참가 신청하기";
+      el.appendChild(b);
+    });
   } else {
-    act.innerHTML = '<p style="margin-top:14px;font-weight:700">참석 신청은 아래 번호로 문의해 주세요.</p>';
+    act.innerHTML = '<p style="margin-top:14px;font-weight:700">참가 신청은 아래 방법으로 접수해 주세요.</p>';
   }
 
   /* 공유 창 */
@@ -439,7 +516,7 @@ section { padding: 44px 20px; }
   function drawQR() {
     /* 인쇄물과 동일한 QR 파일 사용 */
     var img = document.createElement("img");
-    img.src = "qr/qr_sangsaeng2026.svg"; img.alt = "초대장 링크 QR 코드";
+    img.src = "qr/qr_sangsaeng2026.svg"; img.alt = "부스 모집 안내 링크 QR 코드";
     img.onerror = function () { $("qr").textContent = "QR을 불러올 수 없습니다"; };
     $("qr").innerHTML = ""; $("qr").appendChild(img);
   }
@@ -470,7 +547,7 @@ section { padding: 44px 20px; }
   if (navigator.share) {
     $("nativeShare").hidden = false;
     $("nativeShare").addEventListener("click", function () {
-      navigator.share({ title: document.title, text: "2026 고양특례시 소상공인 상생한마당에 초대합니다", url: url }).catch(function () {});
+      navigator.share({ title: document.title, text: "2026 상생한마당 부스 참가업체를 모집합니다 (100팀, 10/10 마감)", url: url }).catch(function () {});
     });
   }
 
