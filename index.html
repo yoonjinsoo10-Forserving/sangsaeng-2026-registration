@@ -73,7 +73,8 @@ h1, h2, h3, p { margin: 0; }
 .cover img { display: block; width: 100%; height: auto; }
 .cover .wave { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 26px; display: block; fill: var(--bg); }
 
-.hero { position: relative; overflow: hidden; text-align: center; color: #fff; padding: 84px 20px 64px; background: linear-gradient(160deg, #1e3f8f 0%, #3b3a9e 55%, #5b2a91 100%); }
+.flyer { display: block; width: 100%; height: auto; }
+.hero { position: relative; overflow: hidden; text-align: center; color: #fff; padding: 44px 20px 64px; background: linear-gradient(160deg, #1e3f8f 0%, #3b3a9e 55%, #5b2a91 100%); }
 .hero::before { content: ""; position: absolute; width: 320px; height: 320px; right: -110px; top: -120px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 255, 255, .22), rgba(255, 255, 255, 0) 70%); }
 .hero::after { content: ""; position: absolute; width: 260px; height: 260px; left: -100px; bottom: -110px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 230, 0, .22), rgba(255, 230, 0, 0) 70%); }
 .hero > * { position: relative; z-index: 1; }
@@ -317,6 +318,7 @@ section { padding: 44px 20px; }
 <div class="wrap">
 
   <header class="cover">
+    <img class="flyer" src="flyer.jpg" width="1000" height="1413" alt="2026년 고양특례시 소상공인 상생한마당 전단지. 소상공인이 웃어야 대한민국이 웃는다. 가수 김소연, 황민호 출연. 2026년 10월 24일 토요일부터 25일 일요일, 일산문화광장. 주최·주관 고양특례시소상공인연합회, 후원 고양특례시.">
     <div class="hero">
       <p class="hero-top">2026 고양특례시 소상공인의 날 기념행사</p>
       <p class="hero-name">상생한마당</p>
