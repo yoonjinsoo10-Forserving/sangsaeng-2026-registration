@@ -267,6 +267,15 @@ section { padding: 44px 20px; }
 .rv .chan li { transition: opacity .7s cubic-bezier(.22, .8, .24, 1), transform .7s cubic-bezier(.22, .8, .24, 1); transition-delay: calc(var(--i, 0) * .1s + .1s); }
 .rv.pre .chan li { opacity: 0; transform: translateY(20px); }
 @media (prefers-reduced-motion: reduce) { .rv .chan li { transition: none; } .rv.pre .chan li { opacity: 1; transform: none; } }
+.alert { margin-top: 22px; text-align: center; border-radius: 18px; padding: 18px 16px 16px; color: #fff; background: linear-gradient(135deg, #e30613, #b3000f); box-shadow: 0 12px 26px rgba(227, 6, 19, .32); }
+.alert-tag { display: inline-block; font-size: 12.5px; font-weight: 800; letter-spacing: .08em; color: #b3000f; background: var(--yellow); border-radius: 999px; padding: 2px 12px; }
+.alert-main { margin-top: 10px; font-size: 19px; font-weight: 700; line-height: 1.4; word-break: keep-all; }
+.alert-main b { font-family: var(--font-display); font-weight: 400; font-size: 24px; color: var(--yellow); }
+.alert-sub { margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(255, 255, 255, .45); font-size: 14px; line-height: 1.6; }
+.alert-sub b { font-size: 17px; }
+.checks li.warn { background: color-mix(in srgb, var(--red) 9%, var(--surface)); box-shadow: inset 0 0 0 2px var(--red), var(--shadow); }
+.checks li.warn::before { content: "!"; background: var(--red); }
+.checks li.warn b { color: var(--red); }
 .btn.off { background: rgba(255, 255, 255, .22); color: #fff; cursor: default; }
 
 /* 주최 */
@@ -396,6 +405,11 @@ section { padding: 44px 20px; }
       <div class="fact" style="--i:0"><dt>판 매</dt><dd><b>직접 판매 중인 제품</b><small>먹거리, 핸드메이드 물품, 애견용품, 친환경 제품 등</small></dd></div>
       <div class="fact" style="--i:1"><dt>체 험</dt><dd><b>공예품, 소품 만들기, 페이스페인팅 등</b><small>방문객이 직접 참여하는 체험 부스</small></dd></div>
     </dl>
+    <div class="alert" role="note">
+      <p class="alert-tag">⚠ 꼭 지켜주세요</p>
+      <p class="alert-main">음식 조리는 <b>전기 사용만 가능</b>합니다</p>
+      <p class="alert-sub"><b>가스 · 부탄가스 사용 절대 불가</b><br>인덕션 등 전기 기구만 사용할 수 있습니다.</p>
+    </div>
     <p class="booth-note">품목의 다양성 확보를 위해 동일·유사 품목은 선정이 제한될 수 있습니다.</p>
     <div class="booths">
       <div class="booth" style="--c:var(--green)"><span class="size">3×3 텐트</span><b class="price">60,000<small>원</small></b><p>텐트 · 상호현수막<br>테이블 1개 · 의자 2개</p></div>
@@ -421,6 +435,7 @@ section { padding: 44px 20px; }
     <p class="eyebrow">Check</p>
     <h2 class="h2" id="chkH">신청 전 꼭 확인하세요</h2>
     <ul class="checks">
+      <li class="warn"><b>음식 조리는 전기만 가능</b>가스와 부탄가스는 사용할 수 없습니다. 인덕션 등 전기 기구만 사용할 수 있으니, 전기 사용 여부와 필요 용량을 신청서에 꼭 적어 주세요.</li>
       <li><b>선정 기준</b>고양시 소상공인이면 신청할 수 있습니다. (사업자등록증이 없어도 가능) 연합회 행사에 적극 참여했던 소상공인을 우선 선정하며, 선정은 절차에 따라 연합회에서 진행합니다.</li>
       <li><b>신청 방법</b>구글 폼을 작성하면 참가신청서와 개인정보처리동의서가 함께 접수됩니다. 이메일·문자로도 접수할 수 있습니다.</li>
       <li><b>미리 준비하세요</b>성명(업체명)·생년월일·주소·연락처, 상품명·예상 판매가·주요 특징, 부스 크기와 참여 인원, 카드단말기·전기 사용 여부(필요 용량)를 적게 됩니다. 개인정보는 행사 안내와 통계·사업 관리에만 쓰이며 사업 종료 시까지 보관합니다. 동의하지 않으면 접수가 제한됩니다.</li>
