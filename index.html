@@ -9,7 +9,8 @@
 <meta property="og:site_name" content="고양특례시소상공인연합회">
 <meta property="og:title" content="2026 상생한마당 부스 참가업체 모집 · 100팀">
 <meta property="og:description" content="10월 10일(토)까지 접수 · 100팀 모집 · 10월 24~25일 일산문화광장 · 내 가게를 알릴 가장 좋은 이틀!">
-<meta property="og:image" content="og.jpg">
+<meta property="og:url" content="https://sangsaeng-2026-registration.pages.dev/">
+<meta property="og:image" content="https://sangsaeng-2026-registration.pages.dev/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="628">
 <meta name="twitter:card" content="summary_large_image">
@@ -72,6 +73,18 @@ h1, h2, h3, p { margin: 0; }
 .cover img { display: block; width: 100%; height: auto; }
 .cover .wave { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 26px; display: block; fill: var(--bg); }
 
+.hero { position: relative; overflow: hidden; text-align: center; color: #fff; padding: 84px 20px 64px; background: linear-gradient(160deg, #1e3f8f 0%, #3b3a9e 55%, #5b2a91 100%); }
+.hero::before { content: ""; position: absolute; width: 320px; height: 320px; right: -110px; top: -120px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 255, 255, .22), rgba(255, 255, 255, 0) 70%); }
+.hero::after { content: ""; position: absolute; width: 260px; height: 260px; left: -100px; bottom: -110px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 230, 0, .22), rgba(255, 230, 0, 0) 70%); }
+.hero > * { position: relative; z-index: 1; }
+.hero-top { font-size: 13px; font-weight: 700; letter-spacing: .12em; color: var(--yellow); }
+.hero-name { font-family: var(--font-display); font-size: 68px; line-height: 1.2; margin-top: 10px; text-shadow: 0 6px 24px rgba(0, 0, 0, .28); }
+.hero-tag { display: inline-block; margin-top: 8px; padding: 6px 22px; border-radius: 999px; background: var(--yellow); color: #14204a; font-size: 20px; font-weight: 800; box-shadow: 0 8px 20px rgba(0, 0, 0, .22); }
+.hero-sub { font-family: var(--font-hand); font-size: 28px; line-height: 1.3; margin-top: 18px; color: #fff; opacity: .95; }
+.hero-chips { list-style: none; padding: 0; margin: 20px 0 0; display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.hero-chips li { padding: 6px 14px; border-radius: 999px; font-size: 14px; font-weight: 700; background: rgba(255, 255, 255, .14); border: 1px solid rgba(255, 255, 255, .32); }
+.hero-date { margin-top: 18px; font-size: 14px; font-weight: 500; opacity: .85; }
+@media (max-width: 380px) { .hero-name { font-size: 54px; } }
 section { padding: 44px 20px; }
 .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; color: var(--purple); text-transform: uppercase; text-align: center; }
 .h2 { font-family: var(--font-display); font-size: 26px; text-align: center; margin-top: 4px; color: var(--navy); text-wrap: balance; line-height: 1.35; }
@@ -304,14 +317,20 @@ section { padding: 44px 20px; }
 <div class="wrap">
 
   <header class="cover">
-    <img src="poster.jpg" alt="2026년 고양특례시 소상공인 상생한마당 포스터. 소상공인이 웃어야 대한민국이 웃는다. 가수 김소연, 황민호 출연. 2026년 10월 24일 토요일부터 25일 일요일, 일산문화광장." width="900" height="1272">
+    <div class="hero">
+      <p class="hero-top">2026 고양특례시 소상공인의 날 기념행사</p>
+      <p class="hero-name">상생한마당</p>
+      <p class="hero-tag">부스 참가업체 모집</p>
+      <p class="hero-sub">소상공인이 웃어야 대한민국이 웃는다!</p>
+      <ul class="hero-chips"><li>100팀 모집</li><li>10.10(토) 접수 마감</li></ul>
+      <p class="hero-date">2026. 10. 24.(토) ~ 25.(일) · 일산문화광장</p>
+    </div>
     <svg class="wave" viewBox="0 0 400 26" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26V14C25 4 50 4 75 14s50 10 75 0 50-10 75 0 50 10 75 0 50-10 75 0 25 5 25 5V26z"/></svg>
   </header>
 
   <section class="intro rv">
     <p class="eyebrow">상생한마당 부스 참가업체 모집</p>
     <h1 class="name">내 가게를 알릴<br>가장 좋은 이틀, <b>상생한마당</b></h1>
-    <p class="slogan">소상공인이 웃어야 대한민국이 웃는다!</p>
     <dl class="facts">
       <div class="fact" style="--i:0"><dt>접 수</dt><dd class="date-hi"><em>2026. 9. 22.(화) ~ 10. 10.(토)</em><small>모집 100팀 · 선정 결과는 개별 문자 통보</small></dd></div>
       <div class="fact" style="--i:1"><dt>행 사</dt><dd class="date-hi"><em>2026. 10. 24.(토) ~ 10. 25.(일)</em><small>2026 고양특례시 소상공인의 날 기념행사</small></dd></div>
@@ -471,7 +490,7 @@ section { padding: 44px 20px; }
 
 <script>
 (function () {
-  var PAGE_URL = "";      // 게시 후 채움. 비어 있으면 현재 주소 사용
+  var PAGE_URL = "https://sangsaeng-2026-registration.pages.dev/";      // 정식 주소. 비어 있으면 현재 주소 사용
   var RSVP_URL = "https://script.google.com/macros/s/AKfycbyBfI7K7UaBOdf_aX4bt5Y9JnUUYNUhU2ll9hH1CkWMSW5ZTei4K1-Lg7UCwdx8TZWdFQ/exec?v=2";      // 부스 참가 신청 폼 주소. 비어 있으면 전화 안내만 표시
   var url = PAGE_URL && PAGE_URL.indexOf("@@") < 0 ? PAGE_URL : location.href;
   var rsvp = RSVP_URL && RSVP_URL.indexOf("@@") < 0 ? RSVP_URL : "";
@@ -516,7 +535,7 @@ section { padding: 44px 20px; }
   function drawQR() {
     /* 인쇄물과 동일한 QR 파일 사용 */
     var img = document.createElement("img");
-    img.src = "qr/qr_sangsaeng2026.svg"; img.alt = "부스 모집 안내 링크 QR 코드";
+    img.src = "qr/qr_booth_apply.svg"; img.alt = "부스 모집 안내 링크 QR 코드";
     img.onerror = function () { $("qr").textContent = "QR을 불러올 수 없습니다"; };
     $("qr").innerHTML = ""; $("qr").appendChild(img);
   }
