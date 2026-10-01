@@ -276,6 +276,26 @@ section { padding: 44px 20px; }
 .checks li.warn { background: color-mix(in srgb, var(--red) 9%, var(--surface)); box-shadow: inset 0 0 0 2px var(--red), var(--shadow); }
 .checks li.warn::before { content: "!"; background: var(--red); }
 .checks li.warn b { color: var(--red); }
+.cats-total { margin-top: 22px; text-align: center; }
+.cats-total b { display: block; font-family: var(--font-display); font-weight: 400; font-size: 30px; line-height: 1.3; background: linear-gradient(90deg, var(--purple), var(--navy)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.cats-total span { font-size: 13.5px; color: var(--muted); }
+.cats { display: grid; gap: 14px; margin-top: 18px; }
+.cat-group { position: relative; overflow: hidden; background: var(--surface); border-radius: 18px; padding: 16px 14px 8px 18px; box-shadow: var(--shadow); }
+.cat-group::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--c); }
+.cat-group h3 { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 17px; color: var(--c); }
+.cat-group h3 .n { font-size: 13px; font-weight: 800; color: #fff; background: var(--c); border-radius: 999px; padding: 1px 12px; }
+.cat-group ul { list-style: none; padding: 0; margin: 8px 0 0; }
+.cat-group li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-top: 1px solid var(--line); }
+.cat-group li b { display: block; font-size: 15px; line-height: 1.4; word-break: keep-all; }
+.cat-group li small { display: block; margin-top: 1px; font-size: 12.5px; color: var(--muted); line-height: 1.45; word-break: keep-all; }
+.cat-group li em { flex: none; font-style: normal; font-family: var(--font-display); font-size: 24px; line-height: 1; color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; }
+.cat-group li em span { font-family: var(--font-body); font-size: 12px; font-weight: 700; color: var(--muted); margin-left: 2px; }
+.cat-warn { margin-top: 8px; font-size: 13px; font-weight: 700; color: var(--red); line-height: 1.5; word-break: keep-all; }
+.cat-group.hot-group { box-shadow: inset 0 0 0 2px var(--red), var(--shadow); background: color-mix(in srgb, var(--red) 6%, var(--surface)); }
+.cat-group li.hot { margin: 4px -8px 4px -4px; padding: 10px 8px 10px 4px; border: 0; border-radius: 12px; background: color-mix(in srgb, var(--red) 10%, var(--surface)); box-shadow: inset 0 0 0 2px var(--red); }
+.cat-group li.hot small { color: var(--red); font-weight: 700; }
+.elec { display: inline-block; font-style: normal; font-size: 11.5px; font-weight: 800; color: #fff; background: var(--red); border-radius: 999px; padding: 0 8px; margin-left: 4px; vertical-align: 1px; }
+.cat-group.promo li em { color: var(--muted); }
 .btn.off { background: rgba(255, 255, 255, .22); color: #fff; cursor: default; }
 
 /* 주최 */
@@ -400,11 +420,68 @@ section { padding: 44px 20px; }
 
   <section class="rv" aria-labelledby="boothH">
     <p class="eyebrow">Booth</p>
-    <h2 class="h2" id="boothH">모집 분야와 부스 안내</h2>
-    <dl class="facts kinds">
-      <div class="fact" style="--i:0"><dt>판 매</dt><dd><b>직접 판매 중인 제품</b><small>먹거리, 핸드메이드 물품, 애견용품, 친환경 제품 등</small></dd></div>
-      <div class="fact" style="--i:1"><dt>체 험</dt><dd><b>공예품, 소품 만들기, 페이스페인팅 등</b><small>방문객이 직접 참여하는 체험 부스</small></dd></div>
-    </dl>
+    <h2 class="h2" id="boothH">업종별 모집 부스와 안내</h2>
+    <div class="cats-total"><b>총 100부스</b><span>업종별 모집 부스(TO)를 확인하고 내 업종에 신청하세요</span></div>
+    <div class="cats">
+      <section class="cat-group hot-group" style="--c:var(--red)">
+        <h3><span class="t">조리 음식 <i class="elec">⚡ 전기 전용</i></span><span class="n">20부스</span></h3>
+        <p class="cat-warn">가스·부탄가스 사용 절대 불가 · 인덕션 등 전기 기구만 사용 가능</p>
+        <ul>
+          <li><div><b>분식·간식</b><small>떡볶이, 어묵 등 간단한 먹거리</small></div><em>4<span>부스</span></em></li>
+          <li><div><b>면·밥류</b><small>국수, 덮밥 등 한 끼 식사</small></div><em>4<span>부스</span></em></li>
+          <li><div><b>전·튀김·구이</b><small>전, 튀김, 구이류</small></div><em>4<span>부스</span></em></li>
+          <li><div><b>음료·디저트</b><small>커피, 차, 빵, 디저트 등</small></div><em>4<span>부스</span></em></li>
+          <li><div><b>지역 먹거리·기타</b><small>그 밖의 조리 음식</small></div><em>4<span>부스</span></em></li>
+        </ul>
+      </section>
+      <section class="cat-group" style="--c:var(--orange)">
+        <h3><span class="t">먹거리 (비조리)</span><span class="n">30부스</span></h3>
+        <ul>
+          <li><div><b>지역 특산물</b><small>고양시와 지역 특산물</small></div><em>5<span>부스</span></em></li>
+          <li><div><b>쌀·곡물·채소</b><small>쌀, 곡물, 채소 등</small></div><em>5<span>부스</span></em></li>
+          <li><div><b>장류·김치·반찬</b><small>된장, 고추장, 김치 등 가공품</small></div><em>5<span>부스</span></em></li>
+          <li><div><b>건강식품·차</b><small>건강식품, 차 등</small></div><em>5<span>부스</span></em></li>
+          <li><div><b>견과류·건어물</b><small>견과류, 건어물 등</small></div><em>5<span>부스</span></em></li>
+          <li><div><b>전통주·전통과자</b><small>전통주, 전통과자 등</small></div><em>5<span>부스</span></em></li>
+        </ul>
+      </section>
+      <section class="cat-group" style="--c:var(--green)">
+        <h3><span class="t">생활·공산품</span><span class="n">30부스</span></h3>
+        <ul>
+          <li><div><b>주방·생활용품</b><small>주방용품, 생활용품</small></div><em>5<span>부스</span></em></li>
+          <li><div><b>소형가전</b><small>소형가전</small></div><em>4<span>부스</span></em></li>
+          <li><div><b>패션소품·잡화</b><small>패션소품, 액세서리 등</small></div><em>4<span>부스</span></em></li>
+          <li><div><b>건강용품</b><small>건강용품</small></div><em>3<span>부스</span></em></li>
+          <li><div><b>DIY·공예소품</b><small>DIY용품, 공예 소품</small></div><em>3<span>부스</span></em></li>
+          <li><div><b>화훼·식물</b><small>꽃, 화분, 식물 등</small></div><em>4<span>부스</span></em></li>
+          <li><div><b>애견용품</b><small>애견 의류, 간식, 용품 등</small></div><em>4<span>부스</span></em></li>
+          <li><div><b>친환경제품</b><small>친환경 생활 제품 등</small></div><em>3<span>부스</span></em></li>
+        </ul>
+      </section>
+      <section class="cat-group" style="--c:var(--pink)">
+        <h3><span class="t">체험</span><span class="n">5부스</span></h3>
+        <ul>
+          <li><div><b>수공예·소품 만들기</b><small>공예품, 천연 비누·화장품, 소품 만들기 체험</small></div><em>3<span>부스</span></em></li>
+          <li><div><b>페이스페인팅·키즈 체험</b><small>페이스페인팅 등 어린이 체험</small></div><em>2<span>부스</span></em></li>
+        </ul>
+      </section>
+      <section class="cat-group promo" style="--c:var(--navy)">
+        <h3><span class="t">홍보 부스</span><span class="n">10부스</span></h3>
+        <ul>
+          <li><div><b>금융</b><small>금융 상담·홍보</small></div><em>3<span>부스</span></em></li>
+          <li><div><b>세무</b><small>세무 상담·홍보</small></div><em>2<span>부스</span></em></li>
+          <li><div><b>법률</b><small>법률 상담·홍보</small></div><em>2<span>부스</span></em></li>
+          <li><div><b>기관·기업 홍보</b><small>소상공인연합회, 삼성전자, LG베스트샵, 롯데칠성 등</small></div><em>3<span>부스</span></em></li>
+        </ul>
+      </section>
+      <section class="cat-group event" style="--c:var(--purple)">
+        <h3><span class="t">이벤트 존</span><span class="n">5부스</span></h3>
+        <ul>
+          <li><div><b>이벤트 존</b><small>방문객 참여 이벤트 운영</small></div><em>5<span>부스</span></em></li>
+        </ul>
+      </section>
+    </div>
+    <p class="booth-note">부스 수(TO)는 신청 상황에 따라 조정될 수 있습니다. 업종에 없는 품목은 신청서에 직접 적어 주세요.</p>
     <div class="alert" role="note">
       <p class="alert-tag">⚠ 꼭 지켜주세요</p>
       <p class="alert-main">음식 조리는 <b>전기 사용만 가능</b>합니다</p>
